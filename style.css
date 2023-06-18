@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --padding-inline: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: monospace;
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1080px;
+    margin-inline: auto;
+    padding: var(--padding-inline);
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/* top-banner */
+
+.top-banner {
+    height: 60px;
+    width: 100vw;
+    background-color: var(--accent-color);
+}
+
+.top-banner-text {
+    color: white;
+    text-align: center;
+    cursor: not-allowed;
+}
+
+marquee {
+    color: #2294ed;
+    font-weight: 500px;
+}
+
+.main-nav {
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+}
+
+.main-nav .nav-toggle {
+    display: none;
+}
+
+.nav-link {
+    display: block;
+}
+
+.company-logo img {
+    width: 200px;
+    transition: all 1s ease-in-out;
+}
+
+.company-logo img:hover {
+    transform: translateX(30px);
+    cursor: pointer;
+}
+
+.main-nav ul {
+    list-style: none;
+    gap: 30px;
+    padding-inline: var(--padding-inline);
+    justify-content: space-between;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+
+.btn-nav {
+    border: 0.5px solid black;
+    padding: 10px 20px;
+    margin: 18px 0 5px;
+    width: auto;
+    min-width: 100px;
+    height: 40px;
+    text-align: center;
+    font-weight: 780;
+    color: black !important;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+}
+
+.btn-primary {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background-color: #208adb;
+    cursor: pointer;
+}
+
+header {
+    padding: 50px var(--padding-inline);
+}
+
+.header {
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left {
+    max-width: 50vw;
+}
+
+.header-right img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.company-section .header-text {
+    text-align: center;
+}
+
+.company-section .logo img {
+    width: 80px;
+}
+
+.logo {
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-block: 30px;
+    flex-wrap: wrap;
+    transition: all 1s ease-in-out;
+}
+
+.logo img:hover {
+    cursor: pointer;
+    scale: 0.95;
+}
+
+.features div>img {
+    width: 90px;
+    aspect-ratio: 1;
+    margin-top: 30px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    ;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.flex-col:hover {
+    scale: 0.95;
+}
+
+.top-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn {
+    min-width: 80px;
+    width: fit-content;
+    max-width: auto;
+    border: 0.5px solid black;
+    padding: 10px 20px;
+    min-height: 40px;
+    max-height: 80px;
+    /* height: 40px; */
+    text-align: center;
+    font-weight: 780;
+    color: black;
+    border-radius: 6px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+}
+
+.btn:hover {
+    background-color: #2294ed;
+    color: white;
+    cursor: pointer;
+}
+
+.box-container {
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 23%;
+    height: 350px;
+    transition: all 0.3s ease-in-out;
+}
+
+.box-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8)), url('burger.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 9px;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+.box-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8)), url('any.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 9px;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+.box-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.8)), url('maggi.jg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 9px;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+.box-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8)), url('pizza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 9px;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+.box:hover {
+    box-shadow: 0 0 10px #888;
+    scale: 1.006;
+    cursor: pointer;
+}
+
+.cta-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.cta-section {
+    background-color: #183b54;
+    color: white;
+    padding: 60px var(--padding-inline);
+}
+
+.foot-logo {
+    width: 25%;
+    max-width: 30%;
+    position: relative;
+    top: 0px;
+}
+
+.foot-logo img {
+    width: 130px;
+    height: 130px;
+    box-sizing: border-box;
+    max-width: 180px;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.foot-logo img:hover {
+    transform: translateX(30px);
+    cursor: pointer;
+}
+
+.footer {
+    justify-content: center;
+    justify-content: space-between;
+    padding: 40px 40px 60px;
+    background-color: #ebf2fa;
+}
+
+.footer>.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    width: 25%;
+    max-width: 30%;
+}
+
+.sub-footer {
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 20px 30px;
+    background-color: #b9cde4;
+    transition: all 1s ease-in-out;
+}
+
+.sub-footer a:hover {
+    color: #2294ed;
+    font-weight: 500px;
+    scale: 1.08;
+    cursor: pointer;
+}
